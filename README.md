@@ -82,3 +82,16 @@ implementation 'androidx.compose.runtime:runtime:1.7.5'
 }
 
 ```
+
+### Usage
+example
+```dart
+@override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: Scaffold(
+	      body: DatePickerAndroidView(),
+	  ),
+    );
+  }
+```
