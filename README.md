@@ -40,16 +40,11 @@ class MainActivity : FlutterFragmentActivity() {
 
 override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
 
-flutterEngine
-
-.platformViewsController
-
-.registry
-
-.registerViewFactory("<platform-view-type>", DatePickerFactory())
-
-}
-
+    flutterEngine
+              .platformViewsController
+              .registry
+              .registerViewFactory("<platform-view-type>", DatePickerFactory())
+  }
 }
 
 ```
